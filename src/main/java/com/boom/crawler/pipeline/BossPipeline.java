@@ -4,12 +4,16 @@ import net.sf.json.JSONObject;
 
 import org.apache.log4j.Logger;
 
+import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
 
+import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.ResultItems;
 import us.codecraft.webmagic.Task;
+import us.codecraft.webmagic.model.HttpRequestBody;
 import us.codecraft.webmagic.pipeline.Pipeline;
+import us.codecraft.webmagic.utils.HttpConstant;
 
 /**
  * Created by yangding on 2017/7/19.
@@ -30,6 +34,8 @@ public class BossPipeline implements Pipeline {
       JSONObject jsonObj = JSONObject.fromObject(map);
       logger.info(jsonObj.toString());
     }
+
+
   }
 
 
